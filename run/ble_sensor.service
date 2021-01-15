@@ -1,0 +1,20 @@
+[Unit]
+Description=Bluetooth Low Energy SQLite3 Service
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+# Change User and Group to your user and group.
+User=patrick
+Group=patrick
+# Change the path from /home/patrick to your username in the following 2 places.
+WorkingDirectory=/home/patrick/SQLite3
+ExecStart=/home/patrick/SQLite3/ble_sensor_service
+KillSignal=SIGHUP
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+
