@@ -56,6 +56,9 @@ Credits
 -------
 - Thank you to [edrosten](https://github.com/edrosten/) for his 
   [Modern clean C++ Bluetooth Low Energy on Linux without the Bluez DBUS API](https://github.com/edrosten/libblepp).
+- Thank you to [obiltschnig](https://github.com/obiltschnig) and the [Poco Project Team](https://pocoproject.org/) for
+  providing the [example and library code](https://github.com/pocoproject/poco/tree/master/Net/samples/WebSocketServer)
+  from which the WebSocket server in this project is built.
 - Thank you to [hjiang](https://github.com/hjiang) for the [jsonxx](https://github.com/hjiang/jsonxx) project. I tested
   several C++ JSON libraries including [jsoncpp](https://github.com/open-source-parsers/jsoncpp) before deciding to use
   jsonxx for its simplicity and speed.  
@@ -68,5 +71,4 @@ References
 ----------
 The following were helpful references in the development of this project.
 
-- [Apache Tutorial: Dynamic Content with CGI](http://httpd.apache.org/docs/current/howto/cgi.html)
-- [Common Gateway Interface](https://en.wikipedia.org/wiki/Common_Gateway_Interface)
+- [Writing WebSocket Servers](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers)
