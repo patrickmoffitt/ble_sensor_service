@@ -22,7 +22,12 @@ sudo setcap 'cap_net_raw,cap_net_admin+eip' build_dir_path/project_binary_name
 
 Installing as a System Service (daemon)
 ---------------------------------------
--1. Make a directory named `SQLite3` in your home directory.
+-1. Make a directory named `SQLite3` in your home directory. Set the group ownership to www-data so that the CGI can 
+read it.
+```bash
+mkdir ~/SQLite3
+chown your_user:www-data ~/SQLite3
+```
 
 -2. Copy the project binary and the contents of the `run` directory from this project into it.
 
